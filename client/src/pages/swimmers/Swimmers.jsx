@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import SearchSwimmer from "../../components/searchSwimmer/SearchSwimmer";
 import SingleSwimmer from "../../components/singleSwimmer/SingleSwimmer";
 import axios from "axios";
+import Footer from "../../components/Footer/Footer";
 
 const Swimmers = () => {
   const [swimmers, setSwimmers] = useState([]);
@@ -34,6 +35,7 @@ const Swimmers = () => {
           <SingleSwimmer key={swimmer._id} item={swimmer}/>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };
